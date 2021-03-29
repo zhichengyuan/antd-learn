@@ -1,0 +1,9 @@
+.header {
+    color: #fff;
+}
+.header h1{
+    color:inherit;
+}
+.header span {
+    margin: 0 10px;
+}
