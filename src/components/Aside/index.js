@@ -6,7 +6,7 @@ const { SubMenu } = Menu;
 const menuConfig = [
     {key:'/',pathname:'/',title:'后台管理首页'},
     {
-        key:'studentManageer',title:'学生查询',
+        key:'studentManageer',title:'学生管理',
         children:[
             {key:'/student',pathname:'/student',title:'学生查询'},
             {key:'/student/add',pathname:'/student/add',title:'添加学生'},

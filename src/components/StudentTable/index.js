@@ -29,10 +29,10 @@ function StudentTable(props) {
         },
         {
             title:'详情',
-            dataIndex:'id',
-            render(id) {
+            dataIndex:'sNo',
+            render(sNo) {
                 return <Button type='link' onClick={() => {
-                    props.history.push(`/student/${id}`)
+                    props.history.push(`/student/${sNo}`)
                 }}>详情</Button>
             }
         }

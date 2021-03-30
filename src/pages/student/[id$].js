@@ -1,10 +1,10 @@
 import React from 'react'
-
+import StudentForm from '../../components/StudentForm'
 function Detail(props) {
     return (
         <div>
-            <h1>修改学生页</h1>
-            <h1>学生学号：{props.match.params.id}</h1>
+            
+            <StudentForm sNo={props.match.params.id}/>
         </div>
     )
 }

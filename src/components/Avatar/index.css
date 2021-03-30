@@ -1,0 +1,13 @@
+.avatar {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avatarimg{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}

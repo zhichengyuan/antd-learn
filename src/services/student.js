@@ -1,4 +1,7 @@
+import qs from 'querystring'
 const appkey = "demo13_1545210570249"
+
+
 
 /**
  * 获取所有学生
@@ -30,3 +33,22 @@ export async function getStudents(page = 1,limit = 10) {
     }
   
  }
+
+ export async function addStudent(stuObj) {
+     const queryStr = qs.stringify(stuObj);
+     const url = `/api/student/addStudent?appkey=${appkey}&${queryStr}`;
+     return await fetch(url).then(resp => resp.json());
+     console.log(url);
+ }
+ export async function updateStudent(stuObj) {
+     const queryStr = qs.stringify(stuObj);
+     const url = `/api/student/updateStudent?appkey=${appkey}&${queryStr}`;
+     return await fetch(url).then(resp => resp.json());
+     console.log(url);
+ }
+
+ export async function getStudentBySNo(sNo) {
+     const stus = await getAllStudents();
+     return stus.find(s => s.sNo === sNo)
+ }
+
