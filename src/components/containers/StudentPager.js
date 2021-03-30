@@ -19,10 +19,7 @@ const mapDispatchToProps = dispatch => ({
                 page:newPage
             }
         })
-        //重新查询
-        // dispatch({
-        //     type:'students/fetchStudents',
-        // })
+        
     }
 })
 
